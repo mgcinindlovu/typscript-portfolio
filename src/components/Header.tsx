@@ -8,6 +8,7 @@ const HeaderContainer = styled.header`
   text-align: center;
   display: flex;
   justify-content: space-evenly;
+  gap: 50rem;
   align-items: center;
   position: fixed;
   width: 100%;
