@@ -8,18 +8,22 @@ const HeaderContainer = styled.header`
   text-align: center;
   display: flex;
   justify-content: space-evenly;
-  gap: 50rem;
+  gap: 40rem;
   align-items: center;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 10;
+  font-family: 'Poppins';
 
   @media (max-width: 768px) {
-    justify-content: space-between;
-    padding: 1rem 1.5rem;
+    justify-content: space-evenly;
+    gap:0rem;
   }
+  
+
+ 
 `
 
 const Logo = styled.h1`

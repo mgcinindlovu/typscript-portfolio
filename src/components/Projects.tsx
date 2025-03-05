@@ -6,12 +6,16 @@ import { faEye } from '@fortawesome/free-solid-svg-icons';
 import image from '../assets/dairy.png';
 import image2 from '../assets/restuarent.png';
 import image3 from '../assets/Fintech.png';
+import image4 from '../assets/jameson (1).png';
+import image5 from '../assets/jameson (2).png';
+import image6 from '../assets/Facebook post - 2.jpg';
 
 const ProjectsSection = styled.section`
   padding: 2rem;
   background-color: #000000;
   text-align: center;
   color: white;
+  font-family: 'Poppins';
 `;
 
 const CategoryButtons = styled.div`
@@ -48,14 +52,16 @@ const ProjectsContent = styled.div`
 `;
 
 const ProjectCard = styled.div`
-  background-color: #1a1a1a;
+  background-color: transparent;
   color: #ffffff;
   padding: 1rem;
   border-radius: 10px;
+  border: 1px solid #0056b3;
   width: 300px;
   text-align: left;
   position: relative;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
 
   &:hover {
     transform: scale(1.05);
@@ -86,9 +92,9 @@ const projectsData = [
   { id: 4, category: 'Backend', title: 'Backend Project 1', image: image, github: '#', live: '#' },
   { id: 5, category: 'Backend', title: 'Backend Project 2', image: image2, github: '#', live: '#' },
   { id: 6, category: 'Backend', title: 'Backend Project 3', image: image3, github: '#', live: '#' },
-  { id: 7, category: 'UI/UX', title: 'UI/UX Project 1', image: image, live: '#' },
-  { id: 8, category: 'UI/UX', title: 'UI/UX Project 2', image: image2, live: '#' },
-  { id: 9, category: 'UI/UX', title: 'UI/UX Project 3', image: image3, live: '#' }
+  { id: 7, category: 'UI/UX', title: 'Jameson Website', image: image4, live: 'https://www.figma.com/proto/z1nBO1jZRnYCdVxt1OE9sV/Untitled?node-id=16-7&p=f&t=ATQqAvsO3m1gisyJ-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1' },
+  { id: 8, category: 'UI/UX', title: 'Watch website', image: image5, live: 'https://www.figma.com/proto/z1nBO1jZRnYCdVxt1OE9sV/Untitled?node-id=178-17&p=f&t=PS7KtgfzFU3WPS5O-1&scaling=scale-down-width&content-scaling=fixed&page-id=160%3A2' },
+  { id: 9, category: 'UI/UX', title: 'Real Estate website', image: image6, live: 'https://www.figma.com/proto/z1nBO1jZRnYCdVxt1OE9sV/Untitled?node-id=134-3401&p=f&t=fFFSTZRcur91qH3Q-1&scaling=min-zoom&content-scaling=fixed&page-id=16%3A243' }
 ];
 
 const Projects = () => {
@@ -97,7 +103,7 @@ const Projects = () => {
   const filteredProjects = projectsData.filter(project => project.category === activeCategory);
 
   return (
-    <ProjectsSection>
+    <ProjectsSection id="projects">
       <CategoryButtons>
         {['Frontend', 'Backend', 'UI/UX'].map(category => (
           <CategoryButton

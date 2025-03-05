@@ -6,6 +6,7 @@ import { ReactTyped } from 'react-typed'
 import image from '../assets/hero.jpg'
 
 const HeroSection = styled.section`
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -15,22 +16,37 @@ const HeroSection = styled.section`
   color: #fff;
   text-align: center;
   padding: 0 4rem;
+  font-family: 'Poppins';
 
-  div {
-    display: flex;
-  
-    align-items: center;
+  /* Overlay for reducing background opacity */
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1); /* Adjust opacity as needed */
+    z-index: 1;
+  }
+
+
+  > * {
+    position: relative;
+    z-index: 2;
   }
 
   @media (max-width: 768px) {
+    height: 100vh;
     padding: 0 2rem;
   }
 
   @media (max-width: 480px) {
-    height: auto;
+    height: 100vh;
     padding: 0 1rem;
   }
-`
+`;
+
 
 const HeroTitle = styled.h1`
   font-size: 3rem;
@@ -123,6 +139,8 @@ const SocialIcon = styled.a`
 `
 
 const Hero: React.FC = () => {
+
+  const cvUrl = "Mgcini_Ndlovu_CV.pdf";
   return (
     <HeroSection>
       <HeroTitle>Welcome to My Portfolio</HeroTitle>
@@ -139,17 +157,17 @@ const Hero: React.FC = () => {
         />
       </HeroSubtitle>
       <div>
-        <HeroButton href="#about">Download CV</HeroButton>
+        <HeroButton href={cvUrl} target="_blank" rel="noopener noreferrer" download="">Download CV</HeroButton>
         <HeroButton href="#contact">Contact Me</HeroButton>
       </div>
       <SocialIcons>
-        <SocialIcon href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        <SocialIcon href="https://github.com/mgcinindlovu" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} />
         </SocialIcon>
         <SocialIcon href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLinkedin} />
         </SocialIcon>
-        <SocialIcon href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
+        <SocialIcon href="https://www.facebook.com/mgcini.ndlovu.10004" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faFacebook} />
         </SocialIcon>
       </SocialIcons>

@@ -6,6 +6,7 @@ const ContactSection = styled.section`
   background-color: #000000;
   text-align: center;
   color: white;
+  font-family: 'Poppins';
 `
 
 const ContactTitle = styled.h2`

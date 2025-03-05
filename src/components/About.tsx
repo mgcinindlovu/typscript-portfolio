@@ -20,6 +20,7 @@ const AboutSection = styled.section`
   background-color: #000000;
   color: white;
   flex-wrap: wrap;
+  font-family: 'Poppins';
 
   @media (max-width: 768px) {
     padding: 1.5rem;
@@ -89,7 +90,7 @@ const Paragraph = styled.p<{ delay: number }>`
 
 const About = () => {
   return (
-    <AboutSection>
+    <AboutSection id="about">
       <ProfileImage src={me} alt="Mgcini Ndlovu" />
       <AboutContent>
         <h2>About Me</h2>
