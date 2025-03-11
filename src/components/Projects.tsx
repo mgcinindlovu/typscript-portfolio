@@ -9,6 +9,9 @@ import image3 from '../assets/Fintech.png';
 import image4 from '../assets/jameson (1).png';
 import image5 from '../assets/jameson (2).png';
 import image6 from '../assets/Facebook post - 2.jpg';
+import image9 from '../assets/1.jpg';
+import image8 from '../assets/Instagram post (2).jpg';
+import image7 from '../assets/Red and Blue Marketing Services Instagram Post.jpg';
 
 const ProjectsSection = styled.section`
   padding: 2rem;
@@ -89,9 +92,9 @@ const projectsData = [
   { id: 1, category: 'Frontend', title: 'DairyBoard Website Project', image: image, github: 'https://github.com/mgcinindlovu/dairybord', live: 'https://dairybord.vercel.app/' },
   { id: 2, category: 'Frontend', title: 'Restuarent Website Project', image: image2, github: 'https://github.com/mgcinindlovu/Restuarent', live: 'https://restuarent-virid.vercel.app/' },
   { id: 3, category: 'Frontend', title: 'Financial Dashboard Project', image: image3, github: 'https://github.com/mgcinindlovu/Fintrack', live: 'https://fintrack-one-blush.vercel.app/' },
-  { id: 4, category: 'Backend', title: 'Backend Project 1', image: image, github: '#', live: '#' },
-  { id: 5, category: 'Backend', title: 'Backend Project 2', image: image2, github: '#', live: '#' },
-  { id: 6, category: 'Backend', title: 'Backend Project 3', image: image3, github: '#', live: '#' },
+  { id: 4, category: 'Graphic Design', title: 'Business Cards', image: image7,  live: 'https://www.canva.com/design/DAGddgIOR5w/3KhMQ59f-g8hqJ0vka-YMg/edit?utm_content=DAGddgIOR5w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton' },
+  { id: 5, category: 'Graphic Design', title: 'Branding', image: image8,  live: 'https://www.figma.com/proto/ZBHiGvUcROmrKfeghUUhR7/Social-media-posters?node-id=47-102&p=f&t=qGK8BOatJVy6elfp-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1' },
+  { id: 6, category: 'Graphic Design', title: 'Company business card', image: image9,  live: 'https://www.figma.com/proto/ZBHiGvUcROmrKfeghUUhR7/Social-media-posters?node-id=40-25&p=f&t=qGK8BOatJVy6elfp-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1' },
   { id: 7, category: 'UI/UX', title: 'Jameson Website', image: image4, live: 'https://www.figma.com/proto/z1nBO1jZRnYCdVxt1OE9sV/Untitled?node-id=16-7&p=f&t=ATQqAvsO3m1gisyJ-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1' },
   { id: 8, category: 'UI/UX', title: 'Watch website', image: image5, live: 'https://www.figma.com/proto/z1nBO1jZRnYCdVxt1OE9sV/Untitled?node-id=178-17&p=f&t=PS7KtgfzFU3WPS5O-1&scaling=scale-down-width&content-scaling=fixed&page-id=160%3A2' },
   { id: 9, category: 'UI/UX', title: 'Real Estate website', image: image6, live: 'https://www.figma.com/proto/z1nBO1jZRnYCdVxt1OE9sV/Untitled?node-id=134-3401&p=f&t=fFFSTZRcur91qH3Q-1&scaling=min-zoom&content-scaling=fixed&page-id=16%3A243' }
@@ -105,7 +108,7 @@ const Projects = () => {
   return (
     <ProjectsSection id="projects">
       <CategoryButtons>
-        {['Frontend', 'Backend', 'UI/UX'].map(category => (
+        {['Frontend', 'Graphic Design', 'UI/UX'].map(category => (
           <CategoryButton
             key={category}
             active={activeCategory === category}

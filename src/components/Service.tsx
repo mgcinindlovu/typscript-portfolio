@@ -136,17 +136,7 @@ const Service = () => {
             </ServiceList>
           </ServiceCardDescription>
         </ServiceCard>
-        <ServiceCard delay={0.5}>
-          <ServiceCardTitle>Mobile App Development</ServiceCardTitle>
-          <ServiceCardDescription>
-            <ServiceList>
-              <ServiceListItem>iOS and Android app development</ServiceListItem>
-              <ServiceListItem>React Native expertise</ServiceListItem>
-              <ServiceListItem>Seamless user experience</ServiceListItem>
-              <ServiceListItem>App store deployment</ServiceListItem>
-            </ServiceList>
-          </ServiceCardDescription>
-        </ServiceCard>
+       
         <ServiceCard delay={1}>
           <ServiceCardTitle>UI/UX Design</ServiceCardTitle>
           <ServiceCardDescription>
@@ -158,6 +148,17 @@ const Service = () => {
             </ServiceList>
           </ServiceCardDescription>
         </ServiceCard>
+        <ServiceCard delay={1}>
+        <ServiceCardTitle>Graphic Design</ServiceCardTitle>
+        <ServiceCardDescription>
+          <ServiceList>
+            <ServiceListItem>Logos & Branding</ServiceListItem>
+            <ServiceListItem>Social Media Graphics</ServiceListItem>
+            <ServiceListItem>Print Design</ServiceListItem>
+            <ServiceListItem>Motion Graphics & Animation</ServiceListItem>
+          </ServiceList>
+        </ServiceCardDescription>
+      </ServiceCard>
       </ServiceContent>
     </ServiceSection>
   )
