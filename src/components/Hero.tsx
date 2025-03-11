@@ -140,7 +140,7 @@ const SocialIcon = styled.a`
 
 const Hero: React.FC = () => {
 
-  const cvUrl = "Mgcini_Ndlovu_CV.pdf";
+  const cvUrl = "Mgcini Ndlovu CV.pdf";
   return (
     <HeroSection>
       <HeroTitle>Welcome to My Portfolio</HeroTitle>

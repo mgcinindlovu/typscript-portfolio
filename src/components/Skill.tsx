@@ -174,11 +174,12 @@ const Skill = () => {
       ],
     },
     {
-      title: 'Backend Skills',
+      title: 'Graphic Design Skills',
       skills: [
-        { name: 'Node.js', level: 80 },
-        { name: 'Python', level: 75 },
-        { name: 'SQL', level: 70 },
+        { name: 'Adobe Photoshop', level: 95 },
+        { name: 'Adobe Illustrator', level: 90 },
+        { name: 'Figma', level: 100 },
+        { name: 'Canva', level: 100 },
       ],
     },
     {
